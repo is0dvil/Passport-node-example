@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<title>Test Site</title>
+		<script src="/res/test.js">
+		</script>
+    </head>
+    
+    <body>
+		
+		<h1>Login with facebook</h1>
+		<a href="/auth/facebook"><img src="/res/login-with-facebook.png" width="154" height="22"/></a>
+		<a href="/logout">LOGOUT</a>
+		<form 	name="form1" 
+				action='javascript:send_data()' >
+		    GET Request.<br><br>
+		    First name:<br>
+		    <input type="text" name="fname">
+		    <br>
+		    Last name:<br>
+		    <input type="text" name="lname">
+		    <br><br>
+		    <input type="submit" value="Submit">
+		</form> 
+
+		<form action="/testpostform" method="POST">
+		    POST Request.<br><br>
+		    First name:<br>
+		    <input type="text" name="firstname">
+		    <br>
+		    Last name:<br>
+		    <input type="text" name="lastname">
+		    <br><br>
+		    <input type="submit" value="Submit">
+		</form> 
+    </body>
+ </html>
